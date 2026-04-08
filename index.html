@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Joshua Kiplagat — ICT Specialist, Web Designer, and Certified Plant Operator. Creating business websites and digital solutions in Kenya.">
+  <meta name="keywords" content="Joshua Kiplagat, ICT, Web Designer, Plant Operator, Kenya, Freelancer, Portfolio">
+  <meta name="author" content="Joshua Kiplagat">
+
+  <title>Joshua Kiplagat | Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome (single load — v6.5.0) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header">
+    <div class="container header-container">
+      <div class="logo-area">
+        <img src="images/logo.png" alt="JK TechOperations Logo" class="logo" />
+        <!-- FIX: was <h1> — changed to <span> to avoid duplicate h1 with hero -->
+        <span class="brand">JKTechOperations</span>
+      </div>
+      <nav class="nav" aria-label="Main navigation">
+        <ul class="nav-links">
+          <!-- FIX: was Index.html (capital I) — breaks on Linux servers -->
+          <li><a href="index.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <!-- FIX: removed fade-in from hero — it's in the viewport on load and may never trigger -->
+  <section class="hero">
+    <div class="container hero-container">
+      <div class="hero-text">
+        <h1>Empowering Businesses &amp; Operations with <span class="highlight">Technology and Skill</span></h1>
+        <p>I help businesses grow through professional websites and digital solutions — while also offering expertise as a trained, safety-certified plant operator for on-site technical operations.</p>
+        <a href="services.html" class="btn primary-btn"><i class="fas fa-briefcase"></i> Explore My Services</a>
+        <a href="contact.html" class="btn secondary-btn"><i class="fas fa-paper-plane"></i> Hire Me</a>
+      </div>
+      <div class="hero-image">
+        <!-- id="profileSlide" used by main.js for image rotation -->
+        <img src="images/profile1.jpg" alt="Joshua Kiplagat" class="hero-profile" id="profileSlide">
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="section fade-in">
+    <div class="container about-flex">
+      <div class="about-image">
+        <img src="images/profile1.jpg" alt="Joshua Kiplagat — ICT Specialist and Plant Operator">
+      </div>
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>I'm <strong>Joshua Kiplagat</strong> — a dual-skilled professional combining <strong>ICT, Web Design, and Plant Operation</strong>. I believe technology and field expertise together create powerful, efficient, and safe business environments.</p>
+        <p>With experience in <strong>web development</strong> and <strong>industrial equipment operation</strong>, I bring both creative and practical problem-solving to any project — ensuring businesses run smoothly online and on-site.</p>
+        <p><strong>My Mission:</strong> To help individuals, brands, and companies showcase their work through modern websites, while supporting technical industries through professional machine operation and site management.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills" class="section fade-in">
+    <div class="container">
+      <h2 class="section-title">Professional Skills</h2>
+      <p class="section-subtext">
+        A blend of ICT, Web Design, and Plant Operation skills — ensuring both digital and on-site excellence.
+      </p>
+      <div class="skills-split">
+
+        <!-- ICT & Web Design -->
+        <div class="skills-column">
+          <h3 class="skills-title blue">ICT &amp; Web Design</h3>
+          <div class="skill-card">
+            <h4>HTML, CSS &amp; JavaScript</h4>
+            <p>Developing responsive and professional websites with clean structure, modern UI design, and functional interactivity.</p>
+          </div>
+          <div class="skill-card">
+            <h4>IT Support &amp; Networking</h4>
+            <p>Installing systems, configuring networks (LAN/WAN), managing hardware, and providing technical troubleshooting.</p>
+          </div>
+          <div class="skill-card">
+            <h4>System Administration</h4>
+            <p>Handling operating systems, software updates, user accounts, and ensuring system security and performance.</p>
+          </div>
+          <div class="skill-card">
+            <h4>Database &amp; Web Maintenance</h4>
+            <p>Managing and updating websites, handling file uploads, user management, and content optimization.</p>
+          </div>
+        </div>
+
+        <!-- Plant Operation -->
+        <div class="skills-column">
+          <h3 class="skills-title green">Plant Operation &amp; Safety</h3>
+          <div class="skill-card">
+            <h4>Backhoe, Forklift &amp; Crane Operation</h4>
+            <p>Certified plant operator trained at Sensei Institute. Skilled in excavation, lifting, loading, and safe site movement.</p>
+          </div>
+          <div class="skill-card">
+            <h4>Safety &amp; Compliance</h4>
+            <p>Trained in OSHA compliance, PPE use, and emergency safety protocols to maintain workplace safety.</p>
+          </div>
+          <div class="skill-card">
+            <h4>Maintenance &amp; Equipment Checks</h4>
+            <p>Daily inspections, fuel monitoring, and minor repairs to enhance machinery efficiency and uptime.</p>
+          </div>
+          <div class="skill-card">
+            <h4>Team Coordination &amp; Communication</h4>
+            <p>Collaborating with site supervisors and colleagues to ensure smooth, safe, and productive operations.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MY VISION ===== -->
+  <section id="vision" class="section fade-in">
+    <div class="container">
+      <h2 class="section-title">My Vision</h2>
+      <p class="section-subtext">
+        Merging technology with practical experience — empowering businesses, individuals, and industries to grow through efficiency, innovation, and safety.
+      </p>
+      <div class="vision-grid">
+        <div class="vision-card">
+          <i class="fas fa-globe"></i>
+          <h3>Digital Empowerment</h3>
+          <p>Helping entrepreneurs and companies establish a strong online presence through professional websites and digital systems.</p>
+        </div>
+        <div class="vision-card">
+          <i class="fas fa-industry"></i>
+          <h3>Industrial Excellence</h3>
+          <p>Bringing a safety-first approach and real technical skill to plant and machinery operations — improving performance on-site.</p>
+        </div>
+        <div class="vision-card">
+          <i class="fas fa-people-carry"></i>
+          <h3>Community Growth</h3>
+          <p>Working with clients, small businesses, and learners to create opportunities that inspire career growth and local development.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section id="services" class="section fade-in">
+    <div class="container">
+      <h2 class="section-title">What I Offer</h2>
+      <div class="service-grid">
+        <div class="service-card">
+          <i class="fas fa-laptop-code"></i>
+          <h3>Web Design &amp; Development</h3>
+          <p>Responsive and modern websites for businesses and individuals — from landing pages to full company portfolios.</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-network-wired"></i>
+          <h3>ICT Support</h3>
+          <p>Networking, computer systems maintenance, troubleshooting, and IT infrastructure setup.</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-hard-hat"></i>
+          <h3>Plant &amp; Equipment Operation</h3>
+          <p>Certified operation of Forklifts, Backhoes, and Cranes — ensuring safety and efficiency in every project.</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-briefcase"></i>
+          <h3>Business Digital Growth</h3>
+          <p>Helping SMEs build their digital presence and reach more clients through creative, targeted solutions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HOW I WORK ===== -->
+  <section id="how" class="section fade-in">
+    <div class="container">
+      <h2 class="section-title">How I Work</h2>
+      <div class="work-process">
+        <div class="work-step">
+          <span class="step-number">1</span>
+          <h3>Consultation</h3>
+          <p>Understand your goals, ideas, and needs for the project.</p>
+        </div>
+        <div class="work-step">
+          <span class="step-number">2</span>
+          <h3>Design &amp; Plan</h3>
+          <p>Create a strategy and layout that aligns with your brand and objectives.</p>
+        </div>
+        <div class="work-step">
+          <span class="step-number">3</span>
+          <h3>Development</h3>
+          <p>Build and integrate functionality — ensuring speed, security, and quality.</p>
+        </div>
+        <div class="work-step">
+          <span class="step-number">4</span>
+          <h3>Delivery &amp; Support</h3>
+          <p>Launch the project and provide ongoing maintenance or updates as needed.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HOW I STAND OUT ===== -->
+  <section id="standout" class="section fade-in">
+    <div class="container">
+      <h2 class="section-title">How I Stand Out</h2>
+      <!-- FIX: .standout-grid and .standout-card had no CSS — using vision-grid/vision-card styles which are identical in purpose -->
+      <div class="vision-grid">
+        <div class="vision-card">
+          <i class="fas fa-layer-group"></i>
+          <h3>Multi-Disciplinary Skillset</h3>
+          <p>I bridge the gap between the digital world and field operations — combining web design, ICT, and plant operation expertise.</p>
+        </div>
+        <div class="vision-card">
+          <i class="fas fa-bolt"></i>
+          <h3>Reliability &amp; Precision</h3>
+          <p>Every project follows safety, quality, and precision standards — whether a website or a machinery operation.</p>
+        </div>
+        <div class="vision-card">
+          <i class="fas fa-lightbulb"></i>
+          <h3>Innovation &amp; Problem Solving</h3>
+          <p>Smart solutions — automating workflows, improving digital visibility, and optimising performance across projects.</p>
+        </div>
+        <div class="vision-card">
+          <i class="fas fa-user-check"></i>
+          <h3>Client-Focused Approach</h3>
+          <p>I listen, adapt, and deliver — ensuring every client's goals are met through professional communication and collaboration.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECT SHOWCASE ===== -->
+  <section id="projects" class="section fade-in">
+    <div class="container">
+      <h2 class="section-title">Highlighted Work</h2>
+      <div class="projects-grid">
+
+        <!-- Project 1 — MaasaiCrafts -->
+        <!-- FIX: slider now uses .slides wrapper + translateX system matching main.js -->
+        <div class="project-card">
+          <div class="project-slider">
+            <div class="slides">
+              <img src="images/maasai1.jpg" alt="MaasaiCrafts Screenshot 1">
+              <img src="images/maasai2.jpg" alt="MaasaiCrafts Screenshot 2">
+              <img src="images/maasai3.jpg" alt="MaasaiCrafts Screenshot 3">
+              <img src="images/maasai4.jpg" alt="MaasaiCrafts Screenshot 4">
+              <img src="images/maasai5.jpg" alt="MaasaiCrafts Screenshot 5">
+            </div>
+            <button class="prev" aria-label="Previous image">&#8249;</button>
+            <button class="next" aria-label="Next image">&#8250;</button>
+          </div>
+          <div class="project-info">
+            <h3>MaasaiCrafts E-Commerce</h3>
+            <p>Responsive online store for Maasai-inspired crafts built using HTML, CSS, and JavaScript. Features product grid and contact integration.</p>
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+            <a href="#" class="btn project-btn">View Demo</a>
+          </div>
+        </div>
+
+        <!-- Project 2 — Upper Hill Logistics -->
+        <div class="project-card">
+          <div class="project-slider">
+            <div class="slides">
+              <img src="images/upperhill1.jpg" alt="Upper Hill Logistics Screenshot 1">
+              <img src="images/upperhill2.jpg" alt="Upper Hill Logistics Screenshot 2">
+              <img src="images/upperhill3.jpg" alt="Upper Hill Logistics Screenshot 3">
+              <img src="images/upperhill4.jpg" alt="Upper Hill Logistics Screenshot 4">
+              <img src="images/upperhill5.jpg" alt="Upper Hill Logistics Screenshot 5">
+            </div>
+            <button class="prev" aria-label="Previous image">&#8249;</button>
+            <button class="next" aria-label="Next image">&#8250;</button>
+          </div>
+          <div class="project-info">
+            <h3>Upper Hill Logistics</h3>
+            <p>Corporate website showcasing transport, freight, and plant hire services using Tailwind CSS for fast performance and responsive design.</p>
+            <div class="project-tags">
+              <span>Tailwind</span><span>HTML</span><span>Responsive</span>
+            </div>
+            <a href="#" class="btn project-btn">View Demo</a>
+          </div>
+        </div>
+
+        <!-- Project 3 — Kanda Granite -->
+        <div class="project-card">
+          <div class="project-slider">
+            <div class="slides">
+              <img src="images/kanda1.jpg" alt="Kanda Granite Screenshot 1">
+              <img src="images/kanda2.jpg" alt="Kanda Granite Screenshot 2">
+              <img src="images/kanda3.jpg" alt="Kanda Granite Screenshot 3">
+              <!-- FIX: was images//kanda4.jpg (double slash) -->
+              <img src="images/kanda4.jpg" alt="Kanda Granite Screenshot 4">
+            </div>
+            <button class="prev" aria-label="Previous image">&#8249;</button>
+            <button class="next" aria-label="Next image">&#8250;</button>
+          </div>
+          <div class="project-info">
+            <h3>Kanda Granite Website</h3>
+            <p>Front-end design for a granite supplier in Nakuru featuring a modern red-themed layout, responsive design, and WhatsApp integration.</p>
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>UI Design</span>
+            </div>
+            <a href="#" class="btn project-btn">View Demo</a>
+          </div>
+        </div>
+
+        <!-- Project 4 — Utawala Gym -->
+        <div class="project-card">
+          <div class="project-slider">
+            <div class="slides">
+              <img src="images/utawalagym1.jpg" alt="Utawala Gym Screenshot 1">
+              <img src="images/utawalagym2.jpg" alt="Utawala Gym Screenshot 2">
+              <img src="images/utawalagym3.jpg" alt="Utawala Gym Screenshot 3">
+              <img src="images/utawalagym4.jpg" alt="Utawala Gym Screenshot 4">
+            </div>
+            <button class="prev" aria-label="Previous image">&#8249;</button>
+            <button class="next" aria-label="Next image">&#8250;</button>
+          </div>
+          <div class="project-info">
+            <h3>Utawala Gym Website</h3>
+            <p>Interactive landing page for a local gym featuring animation effects, map integration, and a modern call-to-action layout optimised for mobile.</p>
+            <div class="project-tags">
+              <span>JavaScript</span><span>Animation</span><span>Design</span>
+            </div>
+            <a href="#" class="btn project-btn">View Demo</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section id="testimonials" class="section fade-in">
+    <div class="container">
+      <h2 class="section-title">Client Testimonials</h2>
+      <p class="section-subtext">What my clients and collaborators say about my work.</p>
+      <div class="testimonial-grid">
+        <div class="testimonial-card">
+          <p>"Joshua designed a clean and modern website for our brand. Communication was clear and delivery was on time."</p>
+          <h4>— Alex M., Business Owner</h4>
+        </div>
+        <div class="testimonial-card">
+          <p>"His responsiveness and attention to detail were impressive. I'll definitely work with him again."</p>
+          <h4>— Mercy K., Marketing Specialist</h4>
+        </div>
+      </div>
+
+      <!-- Screenshot Testimonials -->
+      <div class="testimonial-screenshots">
+        <h3 class="screenshot-title">More Client Feedback</h3>
+        <div class="screenshot-grid">
+          <div class="screenshot-item">
+            <img src="images/testimonial-whatsapp1.jpg" alt="WhatsApp client feedback 1">
+          </div>
+          <div class="screenshot-item">
+            <img src="images/testimonial-whatsapp2.jpg" alt="WhatsApp client feedback 2">
+          </div>
+          <div class="screenshot-item">
+            <img src="images/testimonial-email1.jpg" alt="Email testimonial">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section id="faq" class="section faq fade-in">
+    <div class="container">
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <p class="section-subtext">Common questions clients ask before working with me.</p>
+      <div class="faq-container">
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>How long does it take to build a website?</span>
+            <i class="fas fa-plus"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Most small business websites take 1–3 weeks depending on complexity, number of pages, and client feedback speed. Larger or custom systems may take longer.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Can I request a website redesign?</span>
+            <i class="fas fa-plus"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Yes, I can revamp your current site to modern standards — improving layout, responsiveness, and speed while keeping your content and brand identity.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Do you offer ongoing support or training?</span>
+            <i class="fas fa-plus"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Absolutely. I provide maintenance packages, updates, and one-on-one training so clients can manage their websites confidently after launch.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="section fade-in">
+    <div class="container contact-flex">
+      <div class="contact-form">
+        <h2 class="section-title">Let's Connect</h2>
+        <!-- FIX: replace YOUR_FORMSPREE_ID with your real Formspree endpoint -->
+        <form id="contact-form" action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit" class="btn primary-btn">Send Message</button>
+          <!-- FIX: added form-status div — required by main.js for feedback messages -->
+          <p id="form-status" aria-live="polite"></p>
+        </form>
+      </div>
+      <div class="contact-info">
+        <h3>Reach Me</h3>
+        <p><i class="fas fa-envelope"></i> kiplagatjoshua777@gmail.com</p>
+        <p><i class="fas fa-phone"></i> +254 757 882 470</p>
+        <p><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</p>
+        <a href="https://wa.me/254757882470" target="_blank" rel="noopener" class="btn whatsapp-btn">
+          <i class="fab fa-whatsapp"></i> Message Me on WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-container">
+
+      <!-- Quick Links -->
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="footer-section">
+        <h4>Contact</h4>
+        <p>Email: <a href="mailto:kiplagatjoshua777@gmail.com">kiplagatjoshua777@gmail.com</a></p>
+        <p>Phone: +254 757 882 470</p>
+        <p>Location: Nairobi, Kenya</p>
+      </div>
+
+      <!-- Socials -->
+      <!-- FIX: removed duplicate <h4> — had "Connect With Me" AND "Find Me Online" in same block -->
+      <div class="footer-section">
+        <h4>Find Me Online</h4>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/joshua-kiplagat-53391a290/" target="_blank" rel="noopener">
+            <i class="fab fa-linkedin"></i><span>joshua-kiplagat</span>
+          </a>
+          <a href="https://github.com/joshuak7" target="_blank" rel="noopener">
+            <i class="fab fa-github"></i><span>joshuak7</span>
+          </a>
+          <a href="https://x.com/JoshuaK54981" target="_blank" rel="noopener">
+            <i class="fab fa-twitter"></i><span>JK TechOps</span>
+          </a>
+          <a href="https://www.instagram.com/jk.techoperations/" target="_blank" rel="noopener">
+            <i class="fab fa-instagram"></i><span>JK TechOps</span>
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=61583555619163" target="_blank" rel="noopener">
+            <i class="fab fa-facebook"></i><span>JK TechOps</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Signature -->
+      <div class="footer-section">
+        <h4>Signature</h4>
+        <img src="images/logo.png" alt="JK TechOperations logo" class="stamp" />
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 Joshua Kiplagat. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/254757882470" target="_blank" rel="noopener" class="floating-whatsapp" aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

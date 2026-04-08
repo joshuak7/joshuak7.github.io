@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Read real client testimonials and common questions answered by Joshua Kiplagat — ICT Specialist, Web Designer, and Plant Operator from Kenya.">
+  <meta name="keywords" content="Joshua Kiplagat, testimonials, web design reviews, ICT Kenya, client feedback, FAQ">
+  <meta name="author" content="Joshua Kiplagat">
+  <title>Testimonials &amp; FAQs | Joshua Kiplagat</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome (single load) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header">
+    <div class="container header-container">
+      <div class="logo-area">
+        <img src="images/logo.png" alt="JK TechOperations Logo" class="logo">
+        <!-- FIX: was <h1> -->
+        <span class="brand">JKTechOperations</span>
+      </div>
+      <nav class="nav" aria-label="Main navigation">
+        <ul class="nav-links">
+          <li><a href="index.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <!-- FIX: removed fade-in — hero is in viewport on load -->
+  <section class="testimonials-hero">
+    <div class="container">
+      <h1>Client Testimonials</h1>
+      <p>Hear what clients and collaborators say about my work, professionalism, and commitment to delivering quality solutions.</p>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <!-- FIX: section was never closed in original — broken HTML structure repaired -->
+  <section id="testimonials" class="section fade-in">
+    <div class="container">
+      <h2 class="section-title">Client Testimonials</h2>
+      <p class="section-subtext">Stories of success, growth, and collaboration from businesses I've worked with.</p>
+
+      <div class="testimonial-grid">
+        <div class="testimonial-card">
+          <p>"Joshua designed a clean and modern website for our brand. Communication was clear and delivery was on time."</p>
+          <h4>— Alex M., Business Owner</h4>
+        </div>
+        <div class="testimonial-card">
+          <p>"His responsiveness and attention to detail were impressive. I'll definitely work with him again."</p>
+          <h4>— Mercy K., Marketing Specialist</h4>
+        </div>
+      </div>
+
+      <!-- Screenshot Testimonials -->
+      <div class="testimonial-screenshots">
+        <h3 class="screenshot-title">More Client Feedback</h3>
+
+        <!-- WhatsApp screenshots -->
+        <div class="screenshot-grid">
+          <div class="screenshot-item">
+            <img src="images/testimonial-whatsapp1.jpg" alt="WhatsApp client feedback 1">
+          </div>
+          <div class="screenshot-item">
+            <img src="images/testimonial-whatsapp2.jpg" alt="WhatsApp client feedback 2">
+          </div>
+        </div>
+
+        <!-- Email slider -->
+        <!-- FIX: added prev/next buttons so main.js slider handler can control this -->
+        <div class="project-slider email-slider" style="margin-top: 24px;">
+          <div class="slides">
+            <img src="images/testimonial-email1.jpg" alt="Email testimonial 1">
+            <img src="images/testimonial-email2.jpg" alt="Email testimonial 2">
+          </div>
+          <button class="prev" aria-label="Previous email">&#8249;</button>
+          <button class="next" aria-label="Next email">&#8250;</button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section id="faq" class="section faq fade-in">
+    <div class="container">
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <p class="section-subtext">Got questions before we work together? Here are some quick answers.</p>
+
+      <div class="faq-container">
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>How long does it take to build a website?</span>
+            <i class="fas fa-plus"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Most small business websites take 1–3 weeks depending on complexity and feedback. Larger projects may take longer.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Can I request a website redesign?</span>
+            <i class="fas fa-plus"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Yes. I offer full redesigns to improve layout, responsiveness, and speed while keeping your brand identity.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Do you offer ongoing support or training?</span>
+            <i class="fas fa-plus"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Absolutely. I offer maintenance, updates, and one-on-one training so you can manage your site easily after launch.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>What payment methods do you accept?</span>
+            <i class="fas fa-plus"></i>
+          </button>
+          <div class="faq-answer">
+            <p>I accept M-Pesa, bank transfer, and cash payments. A 50% deposit is required before work begins, with the remainder due on delivery.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="cta">
+    <div class="container">
+      <h2>Have More Questions?</h2>
+      <p>Let's discuss your project — I'm here to help you grow online and professionally.</p>
+      <!-- FIX: was missing btn class styling — added primary-btn -->
+      <a href="contact.html" class="btn primary-btn">Contact Me</a>
+    </div>
+  </section>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/254757882470" target="_blank" rel="noopener" class="floating-whatsapp" aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-container">
+
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4>Contact</h4>
+        <p>Email: <a href="mailto:kiplagatjoshua777@gmail.com">kiplagatjoshua777@gmail.com</a></p>
+        <p>Phone: +254 757 882 470</p>
+        <p>Location: Nairobi, Kenya</p>
+      </div>
+
+      <!-- FIX: removed duplicate <h4> -->
+      <div class="footer-section">
+        <h4>Find Me Online</h4>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/joshua-kiplagat-53391a290/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i><span>joshua-kiplagat</span></a>
+          <a href="https://github.com/joshuak7" target="_blank" rel="noopener"><i class="fab fa-github"></i><span>joshuak7</span></a>
+          <a href="https://x.com/JoshuaK54981" target="_blank" rel="noopener"><i class="fab fa-twitter"></i><span>JK TechOps</span></a>
+          <a href="https://www.instagram.com/jk.techoperations/" target="_blank" rel="noopener"><i class="fab fa-instagram"></i><span>JK TechOps</span></a>
+          <a href="https://www.facebook.com/profile.php?id=61583555619163" target="_blank" rel="noopener"><i class="fab fa-facebook"></i><span>JK TechOps</span></a>
+        </div>
+      </div>
+
+      <div class="footer-section">
+        <h4>Signature</h4>
+        <img src="images/logo.png" alt="JK TechOperations logo" class="stamp" />
+      </div>
+
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Joshua Kiplagat. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- FIX: removed inline JS code from inside <script src="..."> tag — code inside src scripts is ignored by browsers -->
+  <script src="js/main.js"></script>
+</body>
+</html>

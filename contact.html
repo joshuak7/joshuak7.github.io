@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Contact Joshua Kiplagat — ICT Specialist, Web Designer, and Plant Operator. Send a message, book a service, or chat via WhatsApp for professional solutions in Kenya.">
+  <meta name="keywords" content="Joshua Kiplagat, contact, web designer, ICT support, Kenya, freelancer, WhatsApp, email">
+  <meta name="author" content="Joshua Kiplagat">
+  <title>Contact | Joshua Kiplagat Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome (single load) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header">
+    <div class="container header-container">
+      <div class="logo-area">
+        <img src="images/logo.png" alt="JK TechOperations Logo" class="logo">
+        <!-- FIX: was <h1> -->
+        <span class="brand">JKTechOperations</span>
+      </div>
+      <nav class="nav" aria-label="Main navigation">
+        <ul class="nav-links">
+          <li><a href="index.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <!-- FIX: removed fade-in — hero is in viewport on load -->
+  <section class="contact-hero">
+    <div class="container">
+      <h1>Contact Me</h1>
+      <p>Have a project in mind or need professional ICT services? Get in touch and let's discuss how I can help.</p>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section id="contact" class="section fade-in">
+    <div class="container contact-flex">
+
+      <!-- Contact Form -->
+      <div class="contact-form">
+        <h2 class="section-title">Let's Connect</h2>
+        <!-- NOTE: Formspree ID is real — keep as-is -->
+        <form id="contact-form" action="https://formspree.io/f/meerdwwy" method="POST">
+
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <input type="text" name="subject" placeholder="Subject (e.g. Website Project, ICT Support)" />
+          <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+
+          <!-- Formspree hidden settings -->
+          <input type="hidden" name="_subject" value="New Portfolio Contact Message">
+          <input type="hidden" name="_captcha" value="false">
+          <!-- FIX: removed empty _next redirect — was blank, causes Formspree to redirect to a blank page -->
+
+          <button type="submit" class="btn primary-btn">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+
+          <!-- FIX: added form-status element — required by main.js to show send feedback -->
+          <p id="form-status" aria-live="polite" style="margin-top: 10px; font-weight: 600;"></p>
+
+        </form>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="contact-info">
+        <h3>Reach Me</h3>
+        <p><i class="fas fa-envelope"></i> kiplagatjoshua777@gmail.com</p>
+        <p><i class="fas fa-phone"></i> +254 757 882 470</p>
+        <p><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</p>
+        <a href="https://wa.me/254757882470" target="_blank" rel="noopener" class="btn whatsapp-btn">
+          <i class="fab fa-whatsapp"></i> Message Me on WhatsApp
+        </a>
+
+        <div class="map-container" style="margin-top: 20px;">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.865563872111!2d36.8219!3d-1.2921!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f173fb1b8b2b9%3A0x6f0f0e1fd0e3a847!2sNairobi%2C%20Kenya!5e0!3m2!1sen!2ske!4v1668611221342!5m2!1sen!2ske"
+            width="100%"
+            height="220"
+            style="border:0; border-radius: 8px;"
+            allowfullscreen=""
+            loading="lazy"
+            title="Nairobi, Kenya map">
+          </iframe>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="cta">
+    <div class="container">
+      <h2>Let's Build Together</h2>
+      <p>Whether it's a digital project or on-site collaboration, I'm here to bring your ideas to life.</p>
+      <!-- FIX: was missing btn styling class -->
+      <a href="mailto:kiplagatjoshua777@gmail.com" class="btn primary-btn">
+        <i class="fas fa-envelope"></i> Email Me
+      </a>
+    </div>
+  </section>
+
+  <!-- FIX: unified floating WhatsApp class to .floating-whatsapp (was .whatsapp-float on this page only) -->
+  <a href="https://wa.me/254757882470" target="_blank" rel="noopener" class="floating-whatsapp" aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-container">
+
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4>Contact</h4>
+        <p>Email: <a href="mailto:kiplagatjoshua777@gmail.com">kiplagatjoshua777@gmail.com</a></p>
+        <p>Phone: +254 757 882 470</p>
+        <p>Location: Nairobi, Kenya</p>
+      </div>
+
+      <!-- FIX: removed duplicate <h4> -->
+      <div class="footer-section">
+        <h4>Find Me Online</h4>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/joshua-kiplagat-53391a290/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i><span>joshua-kiplagat</span></a>
+          <a href="https://github.com/joshuak7" target="_blank" rel="noopener"><i class="fab fa-github"></i><span>joshuak7</span></a>
+          <a href="https://x.com/JoshuaK54981" target="_blank" rel="noopener"><i class="fab fa-twitter"></i><span>JK TechOps</span></a>
+          <a href="https://www.instagram.com/jk.techoperations/" target="_blank" rel="noopener"><i class="fab fa-instagram"></i><span>JK TechOps</span></a>
+          <a href="https://www.facebook.com/profile.php?id=61583555619163" target="_blank" rel="noopener"><i class="fab fa-facebook"></i><span>JK TechOps</span></a>
+        </div>
+      </div>
+
+      <div class="footer-section">
+        <h4>Signature</h4>
+        <img src="images/logo.png" alt="JK TechOperations logo" class="stamp" />
+      </div>
+
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Joshua Kiplagat. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
